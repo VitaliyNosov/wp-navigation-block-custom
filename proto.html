@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy & Policy</title>
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+</head>
+<body>
+
+    <!-- Напиши в блоке script функционал на java script что бы side bar при клике менял активный цвет li и в исходном
+    ыиде был показан только один блок content-text-block-one остальные скрыты. При клике на последующие элементы
+    li меняесть цвет и переключаються блоки по одному. -->
+
+<style>
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  background: #F3F5F7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.content-block {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sidebar-block {
+  width: 25%;
+  background-color: #FFFFFF;
+  padding: 40px;
+  box-shadow: 4px 4px 23px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+
+.sidebar-list ul {
+  padding-left: 0px;
+}
+
+.sidebar-list ul li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-active-bg-color {
+  background-color: #7FA7AD;
+}
+
+body .sidebar-active-bg-color a {
+  color: #fff !important;
+}
+
+.sidebar-list ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.content-info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 40px;
+  box-shadow: 4px 4px 23px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+
+
+</style>
+
+    <div class="wrapper">
+        <div class="content-block">
+            <div class="sidebar-block">
+                <div class="sidebar-header">
+                    <h2>Table of Content</h2>
+                </div>
+                <div class="sidebar-list">
+                    <ul>
+                        <li class="sidebar-active-bg-color"><a href="#">Introduction</a></li>
+                        <li><a href="#">What we do when we collect your information</a></li>
+                        <li><a href="#">The Marketlend Data Protection Notice</a></li>
+                        <li><a href="#">Marketlend’s use of sensitive data</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">What Marketlend does with your personal information</a></li>
+                        <li><a href="#">Third Party Sites</a></li>
+                        <li><a href="#">Consent, access to your personal information, rights</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-info">
+
+                <div class="content-info-block content-text-block-one">
+                    <div class="contant-info-header">
+                        <h2>Introduction 1</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-two">
+                    <div class="contant-info-header">
+                        <h2>Introduction 2</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-three">
+                    <div class="contant-info-header">
+                        <h2>Introduction 3</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-four">
+                    <div class="contant-info-header">
+                        <h2>Introduction 4</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-five">
+                    <div class="contant-info-header">
+                        <h2>Introduction 5</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-six">
+                    <div class="contant-info-header">
+                        <h2>Introduction 6</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-seven">
+                    <div class="contant-info-header">
+                        <h2>Introduction 7</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-info-block content-text-block-eight">
+                    <div class="contant-info-header">
+                        <h2>Introduction 8</h2>
+                    </div>
+                    <div class="content-info-text">
+                        <p>
+                            Marketlend, Tyndall Capital Pty Ltd and other related entities (We or Us) respect the privacy of the personal information that it collects and is committed to managing that information in a responsible manner. 
+                            “Personal information” is information we hold which is identifiable as being about you. We, like other companies operating in Australia, are bound by the 13 Australian Privacy Principles 
+                            (APPs) as set out in Schedule 1 of the Privacy Amendment (Enhancing Privacy Protection) Act 2012 (as amended), which governs the way we collect, use, disclose, secure and otherwise manage your personal information.
+                            In addition to the Privacy Amendment (Enhancing Privacy Protection) Act 2012, Marketlend is governed by other laws including but not limited to the General Data Protection Regulation (GDPR) (EU) 2016/679, 
+                            a regulation in EU law on data protection and privacy for all individuals within the European Union and the European Economic Area. It also addresses the export of personal data outside the EU and EEA. 
+                            We want to ensure your online experience with us is satisfying and safe. Our aim is to safeguard your privacy and the security of your personal information whilst providing a personalised service that meets your individual needs and preferences. 
+                            We take this stance not just to fulfil our legislative obligations under the Act, but also because we value your trust and our ongoing relationship.
+                            Our privacy policy below explains how we will collect and use the personal information that you may give us. We may vary this policy from time to time and the current version will be that published on this site.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sidebarItems = document.querySelectorAll(".sidebar-list ul li");
+  const contentBlocks = document.querySelectorAll(".content-info-block");
+
+  // Скрываем все блоки, кроме первого
+  for (let i = 1; i < contentBlocks.length; i++) {
+    contentBlocks[i].style.display = "none";
+  }
+
+  sidebarItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      // Удаляем активный класс у всех пунктов боковой панели
+      sidebarItems.forEach((item) => {
+        item.classList.remove("sidebar-active-bg-color");
+      });
+
+      // Добавляем активный класс только текущему пункту боковой панели
+      item.classList.add("sidebar-active-bg-color");
+
+      // Скрываем все блоки с текстом контента
+      contentBlocks.forEach((block) => {
+        block.style.display = "none";
+      });
+
+      // Показываем только блок с текстом, который соответствует кликнутому пункту боковой панели
+      contentBlocks[index].style.display = "block";
+    });
+  });
+});
+
+
+
+</script>
+
+
+</body>
+</html>
