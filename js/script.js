@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     sidebarItems.forEach((item, index) => {
+      if (index === 0) { // Проверяем, что это первый элемент
+        item.classList.add("sidebar-active-bg-color"); // Добавляем класс
+      }
+  
       item.addEventListener("click", () => {
         // Удаляем активный класс у всех пунктов боковой панели
         sidebarItems.forEach((item) => {
@@ -26,5 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         contentBlocks[index].style.display = "block";
       });
     });
-});
+  });
+
+  
   
